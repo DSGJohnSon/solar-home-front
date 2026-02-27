@@ -1,0 +1,42 @@
+{
+  "socialLinks": [
+    { "title": "Facebook", "href": "#", "icon": "FacebookLogoIcon" },
+    { "title": "Instagram", "href": "#", "icon": "InstagramLogoIcon" },
+    { "title": "Youtube", "href": "#", "icon": "YoutubeLogoIcon" },
+    { "title": "LinkedIn", "href": "#", "icon": "LinkedinLogoIcon" }
+  ],
+  "footerLinkGroups": [
+    {
+      "label": "Services Vitrage",
+      "links": [
+        { "title": "Films Design & Initimité", "href": "#" },
+        { "title": "Films Sécurité", "href": "#" },
+        { "title": "Films Solaires", "href": "#" },
+        { "title": "Films High Tech", "href": "#" }
+      ]
+    },
+    {
+      "label": "Services Décoratifs",
+      "links": [
+        { "title": "Adhésifs décoratifs", "href": "#" },
+        { "title": "Rénovation mobilier", "href": "#" },
+        { "title": "Décoration intérieure", "href": "#" }
+      ]
+    },
+    {
+      "label": "Stickage Publicitaire",
+      "links": [
+        { "title": "Vitrophanie", "href": "#" },
+        { "title": "Lettrages & Découpe Vinyle", "href": "#" },
+        { "title": "Logos & Visuels sur Vitrages", "href": "#" }
+      ]
+    },
+    {
+      "label": "Utilitaires",
+      "links": [
+        { "title": "Nos réalisations", "href": "#" },
+        { "title": "Contact / Demande de devis", "href": "#" }
+      ]
+    }
+  ]
+}

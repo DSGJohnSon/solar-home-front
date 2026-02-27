@@ -1,0 +1,149 @@
+{
+  "hero": {
+    "logo": "/logos/solar-home_logo_line_gold-black.svg",
+    "logoMobile": "/logos/solar-home_logo_icon_gold-black.svg",
+    "navigation": [
+      { "label": "Accueil", "href": "/", "title": "Accueil" },
+      {
+        "label": "Services",
+        "href": "#",
+        "title": "Services",
+        "hasDropdown": true,
+        "dropdownContent": {
+          "groups": [
+            {
+              "title": "Vitrage",
+              "links": [
+                {
+                  "label": "Design & Intimité",
+                  "href": "#",
+                  "title": "Design & Intimité"
+                },
+                { "label": "Solaires", "href": "#", "title": "Solaires" },
+                { "label": "Sécurité", "href": "#", "title": "Sécurité" },
+                { "label": "High-Tech", "href": "#", "title": "High-Tech" }
+              ]
+            },
+            {
+              "title": "Décoratifs",
+              "links": [
+                {
+                  "label": "Adhésifs décoratifs",
+                  "href": "#",
+                  "title": "Adhésifs décoratifs"
+                },
+                {
+                  "label": "Rénovation Mobilier",
+                  "href": "#",
+                  "title": "Rénovation Mobilier"
+                },
+                {
+                  "label": "Déco Intérieure",
+                  "href": "#",
+                  "title": "Déco Intérieure"
+                }
+              ]
+            },
+            {
+              "title": "Publicitaire & Vitrophanie",
+              "links": [
+                { "label": "Vitrophanie", "href": "#", "title": "Vitrophanie" },
+                {
+                  "label": "Lettrages & Découpe vinyle",
+                  "href": "#",
+                  "title": "Lettrages & Découpe vinyle"
+                },
+                {
+                  "label": "Logos & Visuels sur Vitrages",
+                  "href": "#",
+                  "title": "Logos & Visuels sur Vitrages"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      { "label": "Galerie", "href": "#", "title": "Galerie" },
+      { "label": "Contact", "href": "#", "title": "Contact" }
+    ],
+    "ctaButton": {
+      "label": "Demander un devis",
+      "href": "#",
+      "title": "Demander un devis"
+    },
+    "title": "Films solaires et adhésifs décoratifs pour vitrages et intérieurs",
+    "subtitle": "Protégez vos espaces de la chaleur et des regards indiscrets avec nos solutions innovantes.",
+    "primaryAction": {
+      "label": "Demander un devis",
+      "href": "#",
+      "title": "Demander un devis"
+    },
+    "secondaryAction": {
+      "label": "Découvrir nos services",
+      "href": "#services",
+      "title": "Découvrir nos services"
+    },
+    "disclaimer": "*Devis gratuit et sans engagement",
+    "socialProof": {
+      "avatars": [
+        "https://i.pravatar.cc/150?img=1",
+        "https://i.pravatar.cc/150?img=2",
+        "https://i.pravatar.cc/150?img=3",
+        "https://i.pravatar.cc/150?img=4"
+      ],
+      "text": "Déjà 100 chantiers réalisés"
+    },
+    "services": [
+      {
+        "image": "https://t3.ftcdn.net/jpg/17/83/66/82/240_F_1783668215_7q6zTFdkBtANhdKV7XgaRmoKTo5Wwwro.jpg",
+        "category": "VITRAGE",
+        "title": "Films Design & Intimité"
+      },
+      {
+        "image": "https://media.istockphoto.com/id/187771508/fr/photo/en-m%C3%A9tal-moderne-et-un-mur-de-verre-avec-des-reflets-de-couleur.jpg?s=612x612&w=0&k=20&c=qo0hOD_dIcl9epWVXNFy_bg1wENzsszRl1rL3RDKeZU=",
+        "category": "VITRAGE",
+        "title": "Films Solaires"
+      },
+      {
+        "image": "https://media.istockphoto.com/id/487726505/fr/photo/verre-bris%C3%A9.jpg?s=612x612&w=0&k=20&c=NyEGa-6Bw8SCswYc5RiWxG2Zvzti2NtKLK7F7eJOKAw=",
+        "category": "VITRAGE",
+        "title": "Films Sécurité"
+      },
+      {
+        "image": "https://www.kokokikol.com/wp-content/uploads/2022/09/Film-led-adhesif-garde-corps.png",
+        "category": "VITRAGE",
+        "title": "Films High-Tech"
+      },
+      {
+        "image": "https://media.istockphoto.com/id/106061466/fr/photo/homme-daffaires-debout-derri%C3%A8re-la-porte-vitr%C3%A9e.jpg?s=612x612&w=0&k=20&c=MMVE9shRswm93jIi08A_J9KaF7OnYSoztEVMC9e-RQA=",
+        "category": "DÉCORATIFS",
+        "title": "Adhésifs Décoratifs"
+      },
+      {
+        "image": "https://t3.ftcdn.net/jpg/05/06/04/30/240_F_506043079_O4xKNgxmeHLaDIdOYnARYBYfkckCXamv.jpg",
+        "category": "DÉCORATIFS",
+        "title": "Rénovation mobilier"
+      },
+      {
+        "image": "https://t3.ftcdn.net/jpg/18/57/27/38/240_F_1857273831_oJ08oGSxWe8Yo6WovISFQpsNjsuBXQch.jpg",
+        "category": "DÉCORATIFS",
+        "title": "Décoration intérieure"
+      },
+      {
+        "image": "https://media.istockphoto.com/id/2196693406/fr/photo/un-travailleur-applique-des-affiches-promotionnelles-pour-les-soldes-dhiver-dans-la-vitrine.jpg?s=612x612&w=0&k=20&c=g-Sd1bOqMRGo8l_EXPRvepbZXYYQsEO0T29rMuyPg0M=",
+        "category": "STICKAGE PUBLICITAIRE",
+        "title": "Vitrophanie"
+      },
+      {
+        "image": "https://media.istockphoto.com/id/2194339814/fr/photo/gros-plan-dun-marquage-blanc-soldes-jusqu%C3%A0-50-%C3%A9crit-en-fran%C3%A7ais-sur-la-vitrine-dun.jpg?s=612x612&w=0&k=20&c=n8f6JLJRv4seO-WRm8pVqdxLRURR10nw3YpMwW_iolw=",
+        "category": "STICKAGE PUBLICITAIRE",
+        "title": "Lettrages & Découpe vinyle"
+      },
+      {
+        "image": "https://media.istockphoto.com/id/2220292070/fr/photo/biblioth%C3%A8que-oosterdok-de-labo.jpg?s=612x612&w=0&k=20&c=C-5C6-BuY9-4i0eSh1-1NW_zR0ToleiGex2GeYQuFYY=",
+        "category": "STICKAGE PUBLICITAIRE",
+        "title": "Logos & Visuels sur Vitrages"
+      }
+    ]
+  }
+}
