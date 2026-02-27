@@ -52,8 +52,6 @@ export function HomeHero({
     baseX.set(baseX.get() + moveBy);
   });
 
-  const x = useTransform(baseX, (v) => `${v % (services.length * 372)}px`);
-
   const handleMouseEnter = (hasDropdown?: boolean) => {
     if (hasDropdown) {
       if (dropdownTimeoutRef.current) {
@@ -84,6 +82,69 @@ export function HomeHero({
   React.useEffect(() => {
     setShuffledServices(shuffleArray([...services]));
   }, [services]);
+
+  const itemRef = React.useRef<HTMLDivElement>(null);
+  const [itemWidth, setItemWidth] = React.useState(372);
+
+  React.useEffect(() => {
+    if (!itemRef.current) return;
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const rect = entry.target.getBoundingClientRect();
+        if (rect.width > 0) {
+          setItemWidth(rect.width + 16);
+        }
+      }
+    });
+    observer.observe(itemRef.current);
+    return () => observer.disconnect();
+  }, [shuffledServices]);
+
+  const halfLength = Math.ceil(shuffledServices.length / 2);
+  const firstHalf = shuffledServices.slice(0, halfLength);
+  const secondHalf = shuffledServices.slice(halfLength);
+
+  const xDesktop = useTransform(baseX, (v) => {
+    const w = shuffledServices.length * itemWidth;
+    return w ? `${v % w}px` : "0px";
+  });
+  const xMobile1 = useTransform(baseX, (v) => {
+    const w = firstHalf.length * itemWidth;
+    return w ? `${(v * 0.5) % w}px` : "0px";
+  });
+  const xMobile2 = useTransform(baseX, (v) => {
+    const w = secondHalf.length * itemWidth;
+    return w ? `${-(w * 4) + (Math.abs(v * 0.5) % w)}px` : "0px";
+  });
+
+  const renderServiceCard = (service: any, index: number) => (
+    <motion.div
+      key={index + service.title}
+      className="shrink-0 cursor-pointer relative overflow-hidden h-[24svh] sm:h-[28svh] md:h-[35svh] aspect-[4/3] sm:aspect-video group"
+    >
+      <Image
+        src={service.image}
+        alt={service.title}
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 group-hover:via-transparent to-black/70 transition-colors duration-500" />
+      <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 border-b-[6px] md:border-b-8 border-primary flex flex-col lg:gap-2">
+        <span className="text-[10px] md:text-[12px] font-medium text-white/80 uppercase tracking-[0.1em]">
+          {service.category}
+        </span>
+        <h3 className="text-[18px] md:text-[24px] font-semibold text-white leading-[1.3]">
+          {service.title}
+        </h3>
+      </div>
+      <div className="hidden lg:flex absolute bottom-4 right-4 md:bottom-8 md:right-8 items-center gap-1.5 md:gap-2 text-white">
+        <span className="text-sm md:text-lg after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 after:ease-in-out group-hover:after:w-full">
+          Découvrir
+        </span>
+        <ArrowRightIcon className="size-4 md:size-5" />
+      </div>
+    </motion.div>
+  );
 
   return (
     <section
@@ -396,77 +457,65 @@ export function HomeHero({
           className="relative z-10 w-full overflow-hidden py-16"
         >
           {/* Gradient Overlays */}
-          <div className="absolute left-0 top-0 bottom-0 z-10 pointer-events-none w-[150px] bg-linear-to-r from-zinc-50 to zinc-50/0" />
-          <div className="absolute right-0 top-0 bottom-0 z-10 pointer-events-none w-[150px] bg-linear-to-l from-zinc-50 to zinc-50/0" />
+          {/* <div className="hidden lg:block absolute left-0 top-0 bottom-0 z-10 pointer-events-none w-[150px] bg-linear-to-r from-zinc-50 to zinc-50/0" />
+          <div className="hidden lg:block absolute right-0 top-0 bottom-0 z-10 pointer-events-none w-[150px] bg-linear-to-l from-zinc-50 to zinc-50/0" /> */}
 
-          {/* Scrolling Container */}
+          {/* Measurement container hidden */}
+          <div
+            aria-hidden="true"
+            className="absolute opacity-0 pointer-events-none flex gap-4 h-[24svh] sm:h-[28svh] md:h-[35svh]"
+          >
+            <div ref={itemRef} className="aspect-4/3 sm:aspect-video h-full" />
+          </div>
+
+          {/* Desktop Single Carousel */}
           <motion.div
-            className="flex items-center gap-4 pl-4 w-max"
+            className="hidden md:flex items-center gap-4 pl-4 w-max"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            style={{ x }}
+            style={{ x: xDesktop }}
           >
-            {/* Duplicate programs for seamless loop */}
-            {[...Array(4)].map((_, i) => (
+            {[...Array(8)].map((_, i) => (
               <div key={i} className="flex items-center gap-4 shrink-0">
-                {[...shuffledServices].map((service, index) => (
-                  <motion.div
-                    key={index + service.title}
-                    className="shrink-0 cursor-pointer relative overflow-hidden h-[35svh] aspect-video group"
-                  >
-                    {/* Image */}
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 group-hover:via-transparent to-black/70 transition-colors duration-500" />
-
-                    {/* Text Content */}
-                    <div
-                      className="absolute bottom-0 left-0 right-0 p-6 border-b-8 border-primary"
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "8px",
-                      }}
-                    >
-                      <span
-                        style={{
-                          fontSize: "12px",
-                          fontWeight: 500,
-                          color: "rgba(255, 255, 255, 0.8)",
-                          textTransform: "uppercase",
-                          letterSpacing: "0.1em",
-                        }}
-                      >
-                        {service.category}
-                      </span>
-                      <h3
-                        style={{
-                          fontSize: "24px",
-                          fontWeight: 600,
-                          color: "#FFFFFF",
-                          lineHeight: "1.3",
-                        }}
-                      >
-                        {service.title}
-                      </h3>
-                    </div>
-                    <div className="absolute bottom-8 right-8 flex items-center gap-2 text-white">
-                      <span className="text-lg after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 after:ease-in-out group-hover:after:w-full">
-                        Découvrir
-                      </span>
-                      <ArrowRightIcon className="size-5" />
-                    </div>
-                  </motion.div>
-                ))}
+                {shuffledServices.map((service, index) =>
+                  renderServiceCard(service, index),
+                )}
               </div>
             ))}
           </motion.div>
+
+          {/* Mobile Double Carousel */}
+          <div className="flex flex-col gap-4 md:hidden">
+            <motion.div
+              className="flex items-center gap-4 pl-4 w-max"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              style={{ x: xMobile1 }}
+            >
+              {[...Array(8)].map((_, i) => (
+                <div key={i} className="flex items-center gap-4 shrink-0">
+                  {firstHalf.map((service, index) =>
+                    renderServiceCard(service, index),
+                  )}
+                </div>
+              ))}
+            </motion.div>
+
+            <motion.div
+              className="flex items-center gap-4 pl-4 w-max"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              style={{ x: xMobile2 }}
+            >
+              {[...Array(8)].map((_, i) => (
+                <div key={i} className="flex items-center gap-4 shrink-0">
+                  {secondHalf.map((service, index) =>
+                    renderServiceCard(service, index),
+                  )}
+                </div>
+              ))}
+            </motion.div>
+          </div>
         </motion.div>
       )}
     </section>

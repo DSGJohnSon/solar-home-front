@@ -145,5 +145,125 @@
         "title": "Logos & Visuels sur Vitrages"
       }
     ]
-  }
+  },
+  "sections": [
+    {
+      "layout": "image-left",
+      "title": "Un spécialiste des films adhésifs pour l’habitat et les espaces professionnels",
+      "subtitle": "Expertise",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "<b>Solar Home</b>, c’est avant tout une expertise dédiée aux solutions adhésives haut de gamme, appliquées avec rigueur et précision. Chaque projet est réalisé avec une exigence professionnelle, tant dans le choix des films que dans la qualité de la pose."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nous travaillons exclusivement avec des films adhésifs techniques et décoratifs reconnus pour leur performance et leur durabilité, sélectionnés pour répondre aux contraintes spécifiques des vitrages et des surfaces intérieures. Protection solaire, sécurité, intimité, design ou rénovation décorative : chaque solution est pensée sur mesure, selon vos usages et vos attentes."
+        },
+        {
+          "type": "paragraph",
+          "text": "La pose est réalisée avec méthode et maîtrise, garantissant un rendu soigné, sans défaut, et une tenue optimale dans le temps. Solar Home privilégie une approche personnalisée, un accompagnement clair à chaque étape et un conseil honnête, loin des solutions standardisées."
+        }
+      ],
+      "image": {
+        "src": "https://media.istockphoto.com/id/187771508/fr/photo/en-m%C3%A9tal-moderne-et-un-mur-de-verre-avec-des-reflets-de-couleur.jpg?s=612x612&w=0&k=20&c=qo0hOD_dIcl9epWVXNFy_bg1wENzsszRl1rL3RDKeZU=",
+        "alt": "Pose de film de fenêtre"
+      }
+    },
+    {
+      "layout": "image-right",
+      "title": "Pose de films adhésifs pour vitrages et intérieurs à Tours et en Indre-et-Loire",
+      "subtitle": "Intervention Locale",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Solar Home intervient à Tours et dans tout le département de l’Indre-et-Loire (37) pour la pose de films adhésifs sur vitrages et d’adhésifs décoratifs pour l’aménagement intérieur."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nous accompagnons les particuliers, les entreprises, les commerces et les collectivités dans leurs projets d’amélioration du confort, de la sécurité et de l’esthétique des espaces."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nos solutions s’adaptent à tous types d’environnements : maisons, appartements, bureaux, vitrines, locaux professionnels, salles de réunion ou espaces recevant du public. Chaque intervention fait l’objet d’une étude personnalisée afin de proposer le film le plus adapté à la configuration des lieux et aux objectifs recherchés."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nous nous déplaçons directement sur site pour analyser vos besoins et vous proposer une solution efficace, durable et parfaitement intégrée à votre environnement."
+        },
+        {
+          "type": "paragraph",
+          "text": "📍 Interventions locales, réactivité et accompagnement sur mesure sont au cœur de notre approche."
+        }
+      ],
+      "image": {
+        "src": "https://media.istockphoto.com/id/106061466/fr/photo/homme-daffaires-debout-derri%C3%A8re-la-porte-vitr%C3%A9e.jpg?s=612x612&w=0&k=20&c=MMVE9shRswm93jIi08A_J9KaF7OnYSoztEVMC9e-RQA=",
+        "alt": "Intervention sur site à Tours"
+      }
+    },
+    {
+      "layout": "center-with-image",
+      "title": "Pourquoi choisir une solution adhésive plutôt qu’un remplacement ?",
+      "subtitle": "Avantages",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Opter pour une solution adhésive sur mesure permet d’améliorer rapidement vos espaces sans engager de travaux lourds ni remplacer vos vitrages ou votre mobilier. Les films adhésifs constituent une alternative intelligente, durable et économique pour répondre à des problématiques de confort, de protection et d’esthétique."
+        },
+        {
+          "type": "paragraph",
+          "text": "Grâce aux films solaires, il est possible de réduire immédiatement la chaleur intérieure, de filtrer efficacement les rayons UV et de limiter l’éblouissement, tout en conservant la luminosité naturelle. Le confort thermique s’en trouve nettement amélioré, été comme hiver."
+        },
+        {
+          "type": "paragraph",
+          "text": "Les adhésifs décoratifs offrent quant à eux une solution rapide pour moderniser un intérieur ou rénover des surfaces existantes. Sans démolition ni nuisances, les espaces sont transformés en un temps réduit, avec un budget maîtrisé et un rendu visuel haut de gamme."
+        },
+        {
+          "type": "paragraph",
+          "text": "Résistantes, durables et faciles d’entretien, les solutions adhésives proposées par Solar Home assurent un résultat esthétique fiable dans le temps, parfaitement adapté aux usages résidentiels comme professionnels."
+        },
+        {
+          "type": "list",
+          "iconType": "check",
+          "items": [
+            "Réduction immédiate de la chaleur et des UV",
+            "Amélioration durable du confort thermique",
+            "Rénovation rapide, sans travaux lourds",
+            "Solution économique et maîtrisée",
+            "Résultat esthétique, propre et durable"
+          ]
+        }
+      ],
+      "image": {
+        "src": "https://t3.ftcdn.net/jpg/17/83/66/82/240_F_1783668215_7q6zTFdkBtANhdKV7XgaRmoKTo5Wwwro.jpg",
+        "alt": "Bureau moderne et lumineux avec film adhésif"
+      },
+      "ctas": [
+        {
+          "label": "Demander un devis gratuit",
+          "href": "#contact",
+          "title": "Demander un devis",
+          "icon": "ArrowRight"
+        }
+      ]
+    },
+    {
+      "layout": "center",
+      "title": "Toutes nos solutions adhésives",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Sélectionnées pour leur qualité professionnelle, leur durabilité et leur facilité d’entretien, avec une pose précise réalisée par un spécialiste formé, nos solutions interviennent sur projets résidentiels et professionnels, avec une approche sur mesure, un accompagnement personnalisé et une exigence constante de résultat."
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Découvrir nos services",
+          "href": "#services",
+          "title": "Voir tous nos services",
+          "icon": "MagnifyingGlass"
+        }
+      ]
+    }
+  ]
 }
