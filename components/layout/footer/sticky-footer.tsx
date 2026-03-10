@@ -6,8 +6,8 @@ import { motion, useReducedMotion } from "motion/react";
 import { Button } from "../../ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { StickyFooterProps } from "@/types/sections/layout/footer";
-import footerData from "@/datas/layout/footer.json";
+import { StickyFooterProps } from "@/components/layout/footer";
+import { footerData } from "@/datas/layout/footer";
 import {
   FacebookLogoIcon,
   InstagramLogoIcon,
@@ -25,11 +25,14 @@ const iconMap = {
 export function StickyFooter({ className, ...props }: StickyFooterProps) {
   return (
     <footer
-      className={cn("relative h-screen lg:h-[500px] w-full border-t-2 border-zinc-300", className)}
+      className={cn(
+        "relative h-screen lg:h-125 w-full border-t-2 border-zinc-300",
+        className,
+      )}
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       {...props}
     >
-      <div className="fixed bottom-0 h-screen lg:h-[500px] w-full">
+      <div className="fixed bottom-0 h-screen lg:h-125 w-full">
         <div className="sticky top-0 lg:top-[calc(100vh-500px)] h-full overflow-y-auto">
           <div className="relative flex size-full flex-col justify-between gap-5 border-t px-4 py-8 md:px-12">
             <div
@@ -48,7 +51,7 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
                     alt="Logo"
                     width={100}
                     height={100}
-                    className="w-[50px] lg:w-1/4"
+                    className="w-12.5 lg:w-1/4"
                   />
                   <div>
                     <p className="text-muted-foreground mt-0 lg:mt-8 text-xs lg:text-sm md:mt-0 mr-0 lg:mr-8 lg:text-balance">
@@ -61,7 +64,12 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
                       {footerData.socialLinks.map((link, index) => {
                         const Icon = iconMap[link.icon as keyof typeof iconMap];
                         return (
-                          <Link href={link.href} key={index} target="_blank" title={link.title}>
+                          <Link
+                            href={link.href}
+                            key={index}
+                            target="_blank"
+                            title={link.title}
+                          >
                             <Button
                               size="icon"
                               variant="outline"
@@ -90,7 +98,7 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
                     className="w-full"
                   >
                     <div className="">
-                      <h3 className="text-sm uppercase">{group.label}</h3>
+                      <h3 className="text-sm">{group.label}</h3>
                       <ul className="text-muted-foreground mt-4 space-y-2  text-sm md:text-xs lg:text-sm">
                         {group.links.map((link) => {
                           const iconName = (link as any).icon;
@@ -135,8 +143,12 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
                 </p>
               </div>
               <div className="flex gap-4">
-                <Link href="#" className="cursor-pointer hover:text-zinc-500">Mentions légales</Link>
-                <Link href="#" className="cursor-pointer hover:text-zinc-500">Politique de confidentialité</Link>
+                <Link href="#" className="cursor-pointer hover:text-zinc-500">
+                  Mentions légales
+                </Link>
+                <Link href="#" className="cursor-pointer hover:text-zinc-500">
+                  Politique de confidentialité
+                </Link>
               </div>
             </div>
           </div>
