@@ -29,7 +29,7 @@ export function Card3() {
     <Card
       ref={cardRef}
       onMouseMove={handleMouseMove}
-      className="relative col-span-full flex flex-col overflow-hidden xl:col-span-2 group bg-zinc-200"
+      className="relative col-span-full flex flex-col overflow-hidden xl:col-span-2 group bg-zinc-200 h-full"
     >
       <CardContent className="flex flex-col h-full relative z-3">
         <div className="flex-1">

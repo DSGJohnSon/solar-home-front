@@ -29,7 +29,7 @@ export function Card4() {
     <Card
       ref={cardRef}
       onMouseMove={handleMouseMove}
-      className="relative col-span-full overflow-hidden sm:col-span-3 xl:col-span-2 group bg-zinc-100"
+      className="relative col-span-full overflow-hidden sm:col-span-3 xl:col-span-2 group bg-zinc-100 h-full"
     >
       <CardContent className="flex h-full flex-col items-center justify-center pt-2 lg:pt-0 text-center relative z-3">
         {/* GRAPH */}
@@ -155,7 +155,7 @@ export function Card4() {
           >
             <Image
               src="/logos/solar-home_logo_icon_gold-black.svg"
-              alt="Solar Home"
+              alt="Solar Home 37"
               width={20}
               height={20}
               className="object-contain p-[2px]"
@@ -177,8 +177,8 @@ export function Card4() {
           </h3>
 
           <p className="text-sm text-muted-foreground mt-2">
-            Les films adhésifs permettent d'améliorer les performances d’un
-            vitrage ou l’esthétique d’une surface sans engager de rénovation
+            Les films adhésifs permettent d&apos;améliorer les performances d&apos;un
+            vitrage ou l&apos;esthétique d&apos;une surface sans engager de rénovation
             complète.
           </p>
         </div>

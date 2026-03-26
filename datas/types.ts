@@ -1,4 +1,3 @@
-import { HeaderProps } from "@/components/layout/header/types";
 import { MapFranceProps } from "@/components/sections/map-france/types";
 
 export interface FooterLink {
@@ -79,7 +78,7 @@ export interface ServicesProps {
 }
 
 export interface ContactSectionProps {
-  _type: "Contact";
+  _type?: "Contact";
   title: string;
   subtitle: string;
 }

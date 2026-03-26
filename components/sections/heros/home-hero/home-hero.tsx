@@ -11,7 +11,7 @@ import Image from "next/image";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import { Button } from "../../../ui/button";
-import { HomeHeroProps } from "@/components/sections/heros/home-hero/types";
+import { HomeHeroProps, ServiceCard } from "@/components/sections/heros/home-hero/types";
 import { Tiles } from "@/components/backgrounds/tiles";
 
 export function HomeHero({
@@ -85,7 +85,7 @@ export function HomeHero({
     return w ? `${-(w * 4) + (Math.abs(v * 0.5) % w)}px` : "0px";
   });
 
-  const renderServiceCard = (service: any, index: number) => (
+  const renderServiceCard = (service: ServiceCard, index: number) => (
     <motion.div
       key={index + service.title}
       className="shrink-0 cursor-pointer relative overflow-hidden h-[24svh] sm:h-[28svh] md:h-[35svh] aspect-4/3 sm:aspect-video group"
@@ -222,7 +222,7 @@ export function HomeHero({
             >
               <div className="flex flex-row -space-x-2">
                 {socialProof.avatars.map((avatar, index) => (
-                  <img
+                  <Image
                     key={index}
                     src={avatar}
                     alt={`User ${index + 1}`}

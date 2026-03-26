@@ -5,11 +5,13 @@ import Image from "next/image";
 interface ImageComparisonProps {
   beforeImage: string;
   afterImage: string;
+  className?: string;
 }
 
 export function ImageComparison({
   beforeImage,
   afterImage,
+  className,
 }: ImageComparisonProps) {
   const [isDragging, setIsDragging] = useState(false);
   const mouseX = useMotionValue(50);
@@ -41,7 +43,7 @@ export function ImageComparison({
 
   return (
     <div
-      className="relative aspect-video w-full overflow-hidden rounded-xl border cursor-ew-resize select-none touch-none"
+      className={className ?? "relative aspect-video w-full overflow-hidden rounded-xl border cursor-ew-resize select-none touch-none"}
       onMouseMove={onMouseMove}
       onTouchMove={onTouchMove}
       onMouseDown={onMouseDown}

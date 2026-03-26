@@ -65,7 +65,7 @@ export function FeatureSteps({
 
         <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-10">
           {/* Steps accordion */}
-          <div className="order-2 md:order-1 space-y-3">
+          <div className="order-2 md:order-1 space-y-3 h-full">
             {features.map((feature, index) => {
               const isOpen = openIndex === index;
 
@@ -88,7 +88,7 @@ export function FeatureSteps({
                   {/* Header cliquable */}
                   <button
                     onClick={() => handleToggle(index)}
-                    className="w-full flex items-center gap-4 px-5 py-4 text-left"
+                    className={cn("w-full flex items-center gap-4 px-5 py-4 text-left", isOpen ? "" : "cursor-pointer")}
                   >
                     {/* Numéro */}
                     <div
@@ -149,7 +149,7 @@ export function FeatureSteps({
                         }}
                         style={{ overflow: "hidden" }}
                       >
-                        <p className="px-5 pt-2 text-sm md:text-base text-muted-foreground">
+                        <p className="px-5 pt-2 text-sm md:text-base text-muted-foreground cursor-default">
                           {feature.content}
                         </p>
 

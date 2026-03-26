@@ -32,7 +32,7 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       {...props}
     >
-      <div className="fixed bottom-0 h-screen lg:h-125 w-full">
+      <div className="fixed bottom-0 h-screen lg:h-125 w-full pt-16 md:pt-0">
         <div className="sticky top-0 lg:top-[calc(100vh-500px)] h-full overflow-y-auto">
           <div className="relative flex size-full flex-col justify-between gap-5 border-t px-4 py-8 md:px-12">
             <div
@@ -55,7 +55,7 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
                   />
                   <div>
                     <p className="text-muted-foreground mt-0 lg:mt-8 text-xs lg:text-sm md:mt-0 mr-0 lg:mr-8 lg:text-balance">
-                      <span className="font-bold">Solar Home</span>, votre
+                      <span className="font-bold">Solar Home 37</span>, votre
                       partenaire spécialiste des films solaires, films de
                       sécurité, films design et adhésifs décoratifs à Tours et
                       en Indre-et-Loire (37).
@@ -101,7 +101,7 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
                       <h3 className="text-sm">{group.label}</h3>
                       <ul className="text-muted-foreground mt-4 space-y-2  text-sm md:text-xs lg:text-sm">
                         {group.links.map((link) => {
-                          const iconName = (link as any).icon;
+                          const iconName = link.icon as string | undefined;
                           const Icon = iconName
                             ? iconMap[iconName as keyof typeof iconMap]
                             : null;
@@ -133,7 +133,7 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
                   {new Date().getFullYear() !== 2026
                     ? " - " + new Date().getFullYear()
                     : ""}{" "}
-                  Solar Home™ | Tous droits réservés.
+                  Solar Home 37 | © Tous droits réservés.
                 </p>
                 <p>
                   Design & Développement par{" "}

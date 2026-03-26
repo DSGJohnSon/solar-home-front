@@ -35,6 +35,9 @@ export interface NavigationItem {
 export interface HeaderProps {
   logo?: string;
   logoMobile?: string;
+  /** Logo variant for dark hero backgrounds (when not scrolled) */
+  logoDark?: string;
+  logoMobileDark?: string;
   navigation?: NavigationItem[];
   ctaButton?: {
     label: string;
@@ -42,4 +45,6 @@ export interface HeaderProps {
     title: string;
   };
   className?: string;
+  /** Activates the dark hero mode: white text, dark-friendly logo, primary CTA */
+  isDarkHero?: boolean;
 }

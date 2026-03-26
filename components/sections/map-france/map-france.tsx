@@ -11,7 +11,6 @@ import { MapFranceProps } from "./types";
 
 export function MapFrance({
   title,
-  subtitle,
   description,
   cities,
   originX,

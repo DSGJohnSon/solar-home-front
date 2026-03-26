@@ -29,13 +29,13 @@ export function Card5() {
     <Card
       ref={cardRef}
       onMouseMove={handleMouseMove}
-      className="relative col-span-full overflow-hidden sm:col-span-3 xl:col-span-2 group flex flex-col justify-center items-center"
+      className="relative col-span-full overflow-hidden sm:col-span-3 xl:col-span-2 group flex flex-col justify-center items-center h-full"
     >
       <CardContent className="pt-6 relative z-4 flex flex-col justify-center items-center">
         <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border before:border-zinc-300 before:bg-white before:-z-10">
           <Image
             src="/logos/solar-home_logo_icon_gold-black.svg"
-            alt="Solar Home™ Logo"
+            alt="Solar Home 37 Logo"
             width={128}
             height={128}
             className="object-contain p-7 relative bg-linear-to-tl from-zinc-300 via-white to-zinc-200 rounded-full"

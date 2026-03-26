@@ -3,7 +3,7 @@ import { FooterData } from "../types";
 export const footerData: FooterData = {
   socialLinks: [
     { title: "Facebook", href: "#", icon: "FacebookLogoIcon" },
-    { title: "Instagram", href: "#", icon: "InstagramLogoIcon" },
+    { title: "Instagram", href: "https://www.instagram.com/SolarHome_37", icon: "InstagramLogoIcon" },
     { title: "Youtube", href: "#", icon: "YoutubeLogoIcon" },
     { title: "LinkedIn", href: "#", icon: "LinkedinLogoIcon" },
   ],
@@ -11,33 +11,36 @@ export const footerData: FooterData = {
     {
       label: "Services Vitrage",
       links: [
-        { title: "Films Design & Initimité", href: "#" },
-        { title: "Films Sécurité", href: "#" },
-        { title: "Films Solaires", href: "#" },
-        { title: "Films High Tech", href: "#" },
+        { title: "Tous nos services vitrages", href: "/films-vitrages" },
+        { title: "Films Design & Initimité", href: "/films-vitrages/films-design-et-intimite" },
+        { title: "Films Sécurité", href: "/films-vitrages/films-securite" },
+        { title: "Films Solaires", href: "/films-vitrages/films-solaires" },
+        { title: "Films High Tech", href: "/films-vitrages/films-high-tech" },
       ],
     },
     {
       label: "Services Décoratifs",
       links: [
-        { title: "Adhésifs décoratifs", href: "#" },
-        { title: "Rénovation mobilier", href: "#" },
-        { title: "Décoration intérieure", href: "#" },
+        { title: "Tous nos services décoratifs", href: "/films-decoratifs" },
+        { title: "Adhésifs décoratifs", href: "/films-decoratifs/adhesifs-decoratifs" },
+        { title: "Rénovation mobilier", href: "/films-decoratifs/renovation-mobilier" },
+        { title: "Décoration intérieure", href: "/films-decoratifs/decoration-interieure " },
       ],
     },
     {
       label: "Stickage Publicitaire",
       links: [
-        { title: "Vitrophanie", href: "#" },
-        { title: "Lettrages & Découpe Vinyle", href: "#" },
-        { title: "Logos & Visuels sur Vitrages", href: "#" },
+        { title: "Tous nos services publicitaires", href: "/films-publicitaires" },
+        { title: "Vitrophanie", href: "/films-publicitaires/vitrophanie" },
+        { title: "Lettrages & Découpe Vinyle", href: "/films-publicitaires/lettrages-decoupe-vinyle" },
+        { title: "Logos & Visuels sur Vitrages", href: "/films-publicitaires/logo-visuels-sur-vitrages" },
       ],
     },
     {
       label: "Contact",
       links: [
-        { title: "Nos réalisations", href: "#" },
-        { title: "Contact / Demande de devis", href: "#" },
+        { title: "Nos réalisations", href: "/nos-realisations" },
+        { title: "Contact / Demande de devis", href: "/contact" },
       ],
     },
   ],

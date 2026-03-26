@@ -37,10 +37,10 @@ export function Services() {
         className="w-full lg:w-1/3"
       >
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance w-full text-foreground font-title uppercase relative mt-4 lg:mt-0 before:content-[''] before:block before:w-[50px] before:h-1 before:bg-primary before:absolute before:-top-4 before:left-0">
-          Nos services chez SolarHome
+          Nos services chez Solar Home 37
         </h2>
         <p className="mt-4 text-sm md:text-base text-muted-foreground">
-          Solar Home™ propose la pose de films solaires, films de sécurité,
+          Solar Home 37 propose la pose de films solaires, films de sécurité,
           adhésifs décoratifs et solutions de vitrophanie pour vitrages
           professionnels et particuliers.
         </p>

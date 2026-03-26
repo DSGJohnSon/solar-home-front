@@ -133,7 +133,7 @@ export const homeData: PageData = {
     },
     {
       _type: "MapFrance",
-      title: "Solar Home™ intervient sur vos chantiers",
+      title: "Solar Home 37 intervient sur vos chantiers",
       description:
         "Nous accompagnons particuliers, entreprises et commerces dans leurs projets d’amélioration du confort, de la sécurité et de l’esthétique des espaces.",
       originX: 38,

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {} from "react";
-import { CityData, MapGraphicProps } from "./types";
+import { MapGraphicProps } from "./types";
 
 export function MapGraphic({
   cities,
@@ -38,7 +38,7 @@ export function MapGraphic({
       >
         <Image
           src="/maps/france-map.svg"
-          alt="Carte de la zone d'intervention de Solar Home"
+          alt="Carte de la zone d'intervention de Solar Home 37"
           fill
           className={cn(
             "object-cover transition-transform duration-500 delay-300",
@@ -61,7 +61,7 @@ export function MapGraphic({
         >
           <Image
             src="/logos/solar-home_logo_icon_gold-black_white_border.svg"
-            alt="Logo Solar Home"
+            alt="Logo Solar Home 37"
             width={100}
             height={100}
             className="w-full object-contain"

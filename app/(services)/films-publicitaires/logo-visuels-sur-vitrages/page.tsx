@@ -1,0 +1,407 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Check, ImageIcon, Palette, Sun, Maximize2 } from "lucide-react";
+import { ImageHero } from "./image-hero";
+import { ContactCTA } from "@/components/sections/contact-cta/contact-cta";
+
+export const metadata: Metadata = {
+  title: "Logos et visuels imprimés sur vitrages à Tours | Solar Home 37",
+  description:
+    "Impression de logos et visuels adhésifs sur vitrines et vitrages à Tours et en Indre-et-Loire. Communication impactante et personnalisée. Devis gratuit.",
+};
+
+const advantages = [
+  {
+    icon: Palette,
+    title: "Personnalisation totale",
+    description:
+      "Logo d'entreprise, univers graphique, visuel promotionnel — chaque impression est conçue sur mesure pour respecter votre identité visuelle.",
+  },
+  {
+    icon: Maximize2,
+    title: "Fort impact visuel",
+    description:
+      "Contrairement au simple lettrage, l'impression permet une communication plus visuelle, créative et immédiatement mémorable.",
+  },
+  {
+    icon: ImageIcon,
+    title: "Communication sur mesure",
+    description:
+      "Opaques, semi-transparents ou microperforés — les supports s'adaptent aux contraintes de chaque vitrage et aux besoins de visibilité.",
+  },
+  {
+    icon: Sun,
+    title: "Rendu durable et fidèle",
+    description:
+      "Les encres et films professionnels utilisés résistent aux UV et préservent la qualité des couleurs dans le temps.",
+  },
+];
+
+const benefits = [
+  "Personnalisation totale du visuel",
+  "Fort impact visuel depuis l'extérieur",
+  "Adapté aux vitrines et grandes surfaces",
+  "Opaques, semi-transparents ou microperforés",
+  "Rendu net et fidèle au visuel d'origine",
+  "Résistance aux UV",
+  "Solutions sur mesure pour chaque projet",
+];
+
+const visualTypes = [
+  {
+    label: "Logos d'entreprise",
+    description:
+      "Reproduction fidèle de votre logo en adhésif sur vitrine, pour une identification visuelle immédiate.",
+  },
+  {
+    label: "Visuels graphiques et identité visuelle",
+    description:
+      "Éléments d'identité, univers de marque, illustrations — pour une vitrine cohérente avec votre communication.",
+  },
+  {
+    label: "Communications promotionnelles",
+    description:
+      "Offres spéciales, ouvertures, événements — des visuels impactants pour capter l'attention au bon moment.",
+  },
+  {
+    label: "Films microperforés",
+    description:
+      "Habillage total de la vitrine tout en conservant la visibilité depuis l'intérieur — idéal pour les grandes surfaces vitrées.",
+  },
+];
+
+const applications = [
+  {
+    label: "Vitrines de magasins",
+    description:
+      "Transformez votre vitrine en support publicitaire fort, visible depuis la rue et cohérent avec votre identité de marque.",
+  },
+  {
+    label: "Devantures commerciales",
+    description:
+      "Habillage complet ou partiel pour un impact maximum sur les passants et les clients potentiels.",
+  },
+  {
+    label: "Bureaux et espaces d'accueil",
+    description:
+      "Logo et identité visuelle appliqués sur les vitrages intérieurs ou extérieurs pour renforcer votre image professionnelle.",
+  },
+  {
+    label: "Agences, showrooms et locaux recevant du public",
+    description:
+      "Communication cohérente et soignée pour tous les espaces visibles de vos clients et partenaires.",
+  },
+];
+
+const faq = [
+  {
+    question: "Peut-on imprimer un logo fourni par le client ?",
+    answer:
+      "Oui, les visuels sont réalisés à partir de vos fichiers ou adaptés si nécessaire pour garantir un rendu optimal.",
+  },
+  {
+    question: "Les impressions résistent-elles au soleil ?",
+    answer:
+      "Oui, les encres et films utilisés sont conçus pour résister aux UV et préserver la qualité des couleurs dans le temps.",
+  },
+  {
+    question: "Peut-on conserver la visibilité intérieure ?",
+    answer:
+      "Oui, des solutions comme le microperforé permettent de voir depuis l'intérieur sans être vu depuis l'extérieur.",
+  },
+  {
+    question: "Cette solution est-elle adaptée aux commerces ?",
+    answer:
+      "Oui, elle est idéale pour les vitrines et devantures souhaitant un fort impact visuel et une communication personnalisée.",
+  },
+  {
+    question: "Quel est le tarif pour l'impression de logos ou de visuels sur vitrage ?",
+    answer:
+      "L'impression et la pose de logos ou visuels sur vitrage sont facturées à partir de 145 €/m² (pose incluse). Un minimum de chantier de 590 € HT est applicable. Devis personnalisé gratuit sur demande.",
+  },
+];
+
+export default function LogoVisuelsSurVitragesPage() {
+  return (
+    <main>
+      {/* ── HERO ─────────────────────────────────────────── */}
+      <section className="w-full bg-zinc-50 pt-32 md:pt-40 pb-0">
+        <div className="px-4 max-w-2xl mx-auto text-center mb-10">
+          <span className="text-primary text-[11px] font-semibold uppercase tracking-widest block mb-4">
+            Films publicitaires · Logos & Visuels
+          </span>
+          <h1
+            className="font-title font-bold text-zinc-950 text-balance mb-4"
+            style={{
+              fontSize: "clamp(26px, 4.5vw, 52px)",
+              lineHeight: 1.1,
+              letterSpacing: "-0.02em",
+            }}
+          >
+            Logos et visuels imprimés sur vitrages pour une communication
+            impactante
+          </h1>
+          <p
+            className="text-zinc-500 mb-8"
+            style={{ fontSize: "clamp(14px, 1.6vw, 17px)", lineHeight: 1.7 }}
+          >
+            Transformez vos surfaces vitrées en supports de communication forts
+            — personnalisés, durables et parfaitement fidèles à votre image.
+          </p>
+          <Link
+            href="/contact"
+            title="Demander un devis pour des logos et visuels sur vitrages"
+          >
+            <Button variant="default" size="xl">
+              Demander un devis gratuit
+            </Button>
+          </Link>
+        </div>
+
+        <div className="px-4 max-w-6xl mx-auto">
+          <ImageHero />
+        </div>
+      </section>
+
+      {/* ── INTRODUCTION ──────────────────────────────────── */}
+      <section className="py-16 md:py-24 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <span className="block w-12 h-1 bg-primary mb-6" />
+          <h2
+            className="font-title font-bold uppercase text-zinc-950 mb-5"
+            style={{ fontSize: "clamp(18px, 3vw, 32px)" }}
+          >
+            Pourquoi choisir l&apos;impression adhésive sur vitrages ?
+          </h2>
+          <div className="space-y-4 text-zinc-600 leading-relaxed text-sm md:text-base">
+            <p>
+              L&apos;impression de logos et visuels adhésifs sur vitrages permet de
+              transformer une surface vitrée en support de communication fort et
+              personnalisé. Contrairement au simple lettrage, l&apos;impression permet
+              une communication plus visuelle et créative.
+            </p>
+            <p>
+              Solar Home 37 accompagne les professionnels dans la création et la
+              pose de visuels imprimés adaptés aux vitrines, devantures et
+              espaces professionnels. Cette solution permet de valoriser une
+              marque, renforcer une identité visuelle et capter l&apos;attention de
+              manière durable.
+            </p>
+            <p>
+              Chaque projet est conçu pour respecter l&apos;image de marque et la
+              lisibilité — du fichier source jusqu&apos;à la pose finale sur site.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── AVANTAGES ─────────────────────────────────────── */}
+      <section className="py-16 md:py-24 px-4 bg-zinc-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="block w-12 h-1 bg-primary mx-auto mb-6" />
+            <h2
+              className="font-title font-bold uppercase text-zinc-950 mb-4"
+              style={{ fontSize: "clamp(18px, 3vw, 32px)" }}
+            >
+              Les avantages de l&apos;impression sur vitrages
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-6">
+            {advantages.map((adv) => {
+              const Icon = adv.icon;
+              return (
+                <div
+                  key={adv.title}
+                  className="bg-white border border-border p-6 md:p-8"
+                >
+                  <div className="w-10 h-10 bg-primary/10 flex items-center justify-center mb-4">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="font-title font-semibold text-zinc-950 mb-2 text-base">
+                    {adv.title}
+                  </h3>
+                  <p className="text-sm text-zinc-600 leading-relaxed">
+                    {adv.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="bg-white border border-border p-6 md:p-8">
+            <h3 className="font-title font-semibold text-zinc-950 mb-5 text-sm uppercase tracking-wider">
+              En résumé
+            </h3>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {benefits.map((b) => (
+                <li key={b} className="flex items-start gap-3">
+                  <span className="shrink-0 mt-0.5 w-5 h-5 bg-primary/10 flex items-center justify-center">
+                    <Check className="w-3 h-3 text-primary" />
+                  </span>
+                  <span className="text-sm text-zinc-700 leading-relaxed">
+                    {b}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* ── TYPES DE VISUELS ──────────────────────────────── */}
+      <section className="py-16 md:py-24 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-10">
+            <span className="block w-12 h-1 bg-primary mb-6" />
+            <h2
+              className="font-title font-bold uppercase text-zinc-950 mb-4"
+              style={{ fontSize: "clamp(18px, 3vw, 32px)" }}
+            >
+              Quels types de visuels peuvent être imprimés ?
+            </h2>
+            <p className="text-zinc-600 max-w-2xl text-sm md:text-base leading-relaxed">
+              Solar Home 37 propose des impressions adaptées à chaque besoin,
+              sur adhésifs opaques, semi-transparents ou microperforés selon les
+              contraintes de visibilité.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-0">
+            {visualTypes.map((type) => (
+              <div
+                key={type.label}
+                className="flex items-start gap-4 p-5 border-b border-r-0 sm:even:border-r-0 sm:odd:border-r border-border last:border-b-0 sm:nth-last-2:border-b-0"
+              >
+                <span className="shrink-0 w-2 h-2 bg-primary mt-2" />
+                <div>
+                  <h3 className="font-semibold text-zinc-950 text-sm mb-1">
+                    {type.label}
+                  </h3>
+                  <p className="text-sm text-zinc-600 leading-relaxed">
+                    {type.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── APPLICATIONS ──────────────────────────────────── */}
+      <section className="py-16 md:py-24 px-4 bg-zinc-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            <div>
+              <span className="block w-12 h-1 bg-primary mb-6" />
+              <h2
+                className="font-title font-bold uppercase text-zinc-950 mb-5"
+                style={{ fontSize: "clamp(18px, 3vw, 32px)" }}
+              >
+                Pour vitrines, bureaux et locaux professionnels
+              </h2>
+              <p className="text-zinc-600 mb-4 leading-relaxed text-sm md:text-base">
+                Les visuels imprimés sur vitrages permettent de communiquer
+                efficacement tout en conservant une cohérence visuelle avec
+                l&apos;identité de marque, quelle que soit la taille ou la nature du
+                local.
+              </p>
+              <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
+                Solar Home 37 garantit un rendu net et fidèle, une pose sans
+                bulles et une intégration harmonieuse au vitrage — pour un
+                résultat qui dure.
+              </p>
+            </div>
+
+            <div className="border border-border">
+              {applications.map((app) => (
+                <div
+                  key={app.label}
+                  className="flex items-start gap-4 p-5 border-b border-border last:border-b-0"
+                >
+                  <span className="shrink-0 w-2 h-2 bg-primary mt-2" />
+                  <div>
+                    <h3 className="font-semibold text-zinc-950 text-sm mb-1">
+                      {app.label}
+                    </h3>
+                    <p className="text-sm text-zinc-600 leading-relaxed">
+                      {app.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ───────────────────────────────────────────── */}
+      <section className="py-16 md:py-24 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <span className="block w-12 h-1 bg-primary mb-6" />
+          <h2
+            className="font-title font-bold uppercase text-zinc-950 mb-10"
+            style={{ fontSize: "clamp(18px, 3vw, 32px)" }}
+          >
+            Questions fréquentes
+          </h2>
+          <dl className="space-y-6">
+            {faq.map((item) => (
+              <div
+                key={item.question}
+                className="border-b border-border pb-6 last:border-b-0"
+              >
+                <dt className="font-semibold text-zinc-950 text-sm mb-2">
+                  {item.question}
+                </dt>
+                <dd className="text-sm text-zinc-600 leading-relaxed">
+                  {item.answer}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      {/* ── SEO LOCAL ─────────────────────────────────────── */}
+      <section className="py-12 md:py-16 px-4 bg-zinc-50 border-t border-border">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2
+            className="font-title font-bold uppercase text-zinc-950 mb-4"
+            style={{ fontSize: "clamp(16px, 2.5vw, 24px)" }}
+          >
+            Logos et visuels imprimés sur vitrages à Tours et en Indre-et-Loire
+          </h2>
+          <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
+            Solar Home 37 intervient à{" "}
+            <strong className="text-zinc-800">Tours</strong>, en{" "}
+            <strong className="text-zinc-800">Indre-et-Loire (37)</strong> et
+            dans les secteurs limitrophes pour l&apos;impression et la pose de
+            visuels adhésifs sur vitrages professionnels.
+          </p>
+        </div>
+      </section>
+
+      {/* ── TARIFS ────────────────────────────────────────── */}
+      <section className="py-8 px-4 bg-zinc-50 border-t border-border">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <p className="text-sm text-zinc-600">
+            <span className="font-semibold text-zinc-950">À partir de 145 €/m²</span>
+            {" · "}Minimum 590 € HT
+          </p>
+          <Link href="/tarifs" className="text-sm font-semibold text-primary hover:underline underline-offset-4 shrink-0">
+            Voir tous les tarifs →
+          </Link>
+        </div>
+      </section>
+
+      {/* ── CTA FINAL ─────────────────────────────────────── */}
+      <ContactCTA
+        title="Vous souhaitez afficher votre logo ou votre visuel sur vos vitrages ?"
+        subtitle="Contactez Solar Home 37 pour une solution d'impression sur mesure, esthétique et adaptée à votre image de marque."
+      />
+    </main>
+  );
+}
