@@ -31,60 +31,70 @@ export const homeData: PageData = {
           "https://t3.ftcdn.net/jpg/17/83/66/82/240_F_1783668215_7q6zTFdkBtANhdKV7XgaRmoKTo5Wwwro.jpg",
         category: "VITRAGE",
         title: "Films Design & Intimité",
+        href:"/films-vitrages/films-design-et-intimite"
       },
       {
         image:
-          "https://media.istockphoto.com/id/187771508/fr/photo/en-m%C3%A9tal-moderne-et-un-mur-de-verre-avec-des-reflets-de-couleur.jpg?s=612x612&w=0&k=20&c=qo0hOD_dIcl9epWVXNFy_bg1wENzsszRl1rL3RDKeZU=",
+        "https://media.istockphoto.com/id/187771508/fr/photo/en-m%C3%A9tal-moderne-et-un-mur-de-verre-avec-des-reflets-de-couleur.jpg?s=612x612&w=0&k=20&c=qo0hOD_dIcl9epWVXNFy_bg1wENzsszRl1rL3RDKeZU=",
         category: "VITRAGE",
         title: "Films Solaires",
+        href:"/films-vitrages/films-solaires"
       },
       {
         image:
-          "https://media.istockphoto.com/id/487726505/fr/photo/verre-bris%C3%A9.jpg?s=612x612&w=0&k=20&c=NyEGa-6Bw8SCswYc5RiWxG2Zvzti2NtKLK7F7eJOKAw=",
+        "https://media.istockphoto.com/id/487726505/fr/photo/verre-bris%C3%A9.jpg?s=612x612&w=0&k=20&c=NyEGa-6Bw8SCswYc5RiWxG2Zvzti2NtKLK7F7eJOKAw=",
         category: "VITRAGE",
         title: "Films Sécurité",
+        href:"/films-vitrages/films-securite"
       },
       {
         image:
-          "https://www.kokokikol.com/wp-content/uploads/2022/09/Film-led-adhesif-garde-corps.png",
+        "https://www.kokokikol.com/wp-content/uploads/2022/09/Film-led-adhesif-garde-corps.png",
         category: "VITRAGE",
         title: "Films High-Tech",
+        href:"/films-vitrages/films-high-tech"
       },
       {
         image:
-          "https://media.istockphoto.com/id/106061466/fr/photo/homme-daffaires-debout-derri%C3%A8re-la-porte-vitr%C3%A9e.jpg?s=612x612&w=0&k=20&c=MMVE9shRswm93jIi08A_J9KaF7OnYSoztEVMC9e-RQA=",
+        "https://media.istockphoto.com/id/106061466/fr/photo/homme-daffaires-debout-derri%C3%A8re-la-porte-vitr%C3%A9e.jpg?s=612x612&w=0&k=20&c=MMVE9shRswm93jIi08A_J9KaF7OnYSoztEVMC9e-RQA=",
         category: "DÉCORATIFS",
         title: "Adhésifs Décoratifs",
+        href:"/films-decoratifs/adhesifs-decoratifs"
       },
       {
         image:
-          "https://t3.ftcdn.net/jpg/05/06/04/30/240_F_506043079_O4xKNgxmeHLaDIdOYnARYBYfkckCXamv.jpg",
+        "https://t3.ftcdn.net/jpg/05/06/04/30/240_F_506043079_O4xKNgxmeHLaDIdOYnARYBYfkckCXamv.jpg",
         category: "DÉCORATIFS",
         title: "Rénovation mobilier",
+        href:"/films-decoratifs/renovation-mobilier"
       },
       {
         image:
-          "https://t3.ftcdn.net/jpg/18/57/27/38/240_F_1857273831_oJ08oGSxWe8Yo6WovISFQpsNjsuBXQch.jpg",
+        "https://t3.ftcdn.net/jpg/18/57/27/38/240_F_1857273831_oJ08oGSxWe8Yo6WovISFQpsNjsuBXQch.jpg",
         category: "DÉCORATIFS",
         title: "Décoration intérieure",
+        href:"/films-decoratifs/decoration-interieure"
       },
       {
         image:
-          "https://media.istockphoto.com/id/2196693406/fr/photo/un-travailleur-applique-des-affiches-promotionnelles-pour-les-soldes-dhiver-dans-la-vitrine.jpg?s=612x612&w=0&k=20&c=g-Sd1bOqMRGo8l_EXPRvepbZXYYQsEO0T29rMuyPg0M=",
+        "https://media.istockphoto.com/id/2196693406/fr/photo/un-travailleur-applique-des-affiches-promotionnelles-pour-les-soldes-dhiver-dans-la-vitrine.jpg?s=612x612&w=0&k=20&c=g-Sd1bOqMRGo8l_EXPRvepbZXYYQsEO0T29rMuyPg0M=",
         category: "STICKAGE PUBLICITAIRE",
         title: "Vitrophanie",
+        href:"/films-publicitaires/vitrophanie"
       },
       {
         image:
-          "https://media.istockphoto.com/id/2194339814/fr/photo/gros-plan-dun-marquage-blanc-soldes-jusqu%C3%A0-50-%C3%A9crit-en-fran%C3%A7ais-sur-la-vitrine-dun.jpg?s=612x612&w=0&k=20&c=n8f6JLJRv4seO-WRm8pVqdxLRURR10nw3YpMwW_iolw=",
+        "https://media.istockphoto.com/id/2194339814/fr/photo/gros-plan-dun-marquage-blanc-soldes-jusqu%C3%A0-50-%C3%A9crit-en-fran%C3%A7ais-sur-la-vitrine-dun.jpg?s=612x612&w=0&k=20&c=n8f6JLJRv4seO-WRm8pVqdxLRURR10nw3YpMwW_iolw=",
         category: "STICKAGE PUBLICITAIRE",
         title: "Lettrages & Découpe vinyle",
+        href:"/films-publicitaires/lettrages-decoupe-vinyle"
       },
       {
         image:
-          "https://media.istockphoto.com/id/2220292070/fr/photo/biblioth%C3%A8que-oosterdok-de-labo.jpg?s=612x612&w=0&k=20&c=C-5C6-BuY9-4i0eSh1-1NW_zR0ToleiGex2GeYQuFYY=",
+        "https://media.istockphoto.com/id/2220292070/fr/photo/biblioth%C3%A8que-oosterdok-de-labo.jpg?s=612x612&w=0&k=20&c=C-5C6-BuY9-4i0eSh1-1NW_zR0ToleiGex2GeYQuFYY=",
         category: "STICKAGE PUBLICITAIRE",
         title: "Logos & Visuels sur Vitrages",
+        href:"/films-publicitaires/logo-visuels-sur-vitrages"
       },
     ],
   },
@@ -185,12 +195,12 @@ export const homeData: PageData = {
       ],
       primaryAction: {
         label: "Demander un devis",
-        href: "#",
+        href: "/contact",
         title: "Demander un devis",
       },
       secondaryAction: {
         label: "Nos réalisations",
-        href: "#",
+        href: "/nos-realisations",
         title: "Nos réalisations",
       },
     },

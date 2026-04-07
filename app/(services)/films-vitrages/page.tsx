@@ -52,7 +52,7 @@ const categories = [
     title: "Films design & intimité",
     description:
       "Solution esthétique pour préserver l'intimité ou structurer visuellement vos surfaces vitrées : dépoli, occultant, motifs.",
-    href: "/films-vitrages/films-design",
+    href: "/films-vitrages/films-design-et-intimite",
     image: "/images/services-solar-home-decoratifs.webp",
     targets: [
       "Cloisons vitrées",
@@ -66,7 +66,7 @@ const categories = [
     description:
       "Solutions techniques avancées combinant protection thermique renforcée, contrôle solaire optimisé et durabilité accrue.",
     href: "/films-vitrages/films-high-tech",
-    image: "/images/services-solar-home-vitrophanie.webp",
+    image: "/images/films-high-tech/high-tech.gif",
     targets: [
       "Projets à hautes performances",
       "Solutions techniques précises",

@@ -38,6 +38,7 @@ export interface HeroSocialProof {
 }
 
 export interface HeroService {
+  href: string;
   image: string;
   category: string;
   title: string;

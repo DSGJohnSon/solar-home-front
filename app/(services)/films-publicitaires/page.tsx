@@ -40,7 +40,7 @@ const categories = [
     description:
       "Solution sobre et élégante : nom d'enseigne, slogan, informations clés, signalétique directionnelle — rendu net et précis.",
     href: "/films-publicitaires/lettrages-decoupe-vinyle",
-    image: "/images/services-solar-home-vitrages-2.webp",
+    image: "https://media.istockphoto.com/id/2194339814/fr/photo/gros-plan-dun-marquage-blanc-soldes-jusqu%C3%A0-50-%C3%A9crit-en-fran%C3%A7ais-sur-la-vitrine-dun.jpg?s=612x612&w=0&k=20&c=n8f6JLJRv4seO-WRm8pVqdxLRURR10nw3YpMwW_iolw=",
     targets: [
       "Enseignes et noms de commerce",
       "Slogans et informations clés",
@@ -53,7 +53,7 @@ const categories = [
     description:
       "Impression sur mesure de logos personnalisés, visuels graphiques et éléments de communication — opaques ou microperforés.",
     href: "/films-publicitaires/logo-visuels-sur-vitrages",
-    image: "/images/services-solar-home-decoratifs.webp",
+    image: "https://media.istockphoto.com/id/2220292070/fr/photo/biblioth%C3%A8que-oosterdok-de-labo.jpg?s=612x612&w=0&k=20&c=C-5C6-BuY9-4i0eSh1-1NW_zR0ToleiGex2GeYQuFYY=",
     targets: [
       "Logos et identité visuelle",
       "Visuels graphiques imprimés",

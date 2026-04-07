@@ -40,7 +40,7 @@ const categories = [
     description:
       "Modernisation de meubles existants : cuisines, dressings, placards, bureaux, comptoirs et meubles professionnels.",
     href: "/films-decoratifs/renovation-mobilier",
-    image: "/images/services-solar-home-vitrages.webp",
+    image: "/images/renovation-mobilier/films-renovation-mobilier.jpg",
     targets: [
       "Cuisines et dressings",
       "Meubles de bureau et comptoirs",
@@ -53,7 +53,7 @@ const categories = [
     description:
       "Transformation visuelle de murs, portes, cloisons et surfaces décoratives sans démolition ni gros chantier.",
     href: "/films-decoratifs/decoration-interieure",
-    image: "/images/services-solar-home-vitrages-2.webp",
+    image: "/images/decoration-interieure/films-decoration-interieure-escalier.webp",
     targets: [
       "Murs et cloisons",
       "Portes et fenêtres intérieures",

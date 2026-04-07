@@ -1,16 +1,15 @@
-"use client";
-
-import { ImageComparison } from "@/components/ui/image-comparison";
+import Image from "next/image";
 
 export function ImageHero() {
   return (
-    <div className="w-full">
-      <p className="text-center text-[11px] text-zinc-400 mb-2">
-        Glissez pour comparer avant / après pose
-      </p>
-      <ImageComparison
-        beforeImage="/images/vitrophanie/before.jpg"
-        afterImage="/images/vitrophanie/after.jpg"
+    <div className="relative w-full aspect-video overflow-hidden">
+      <Image
+        src="/images/services-solar-home-vitrophanie.webp"
+        alt="Rénovation de mobilier par Solar Home 37"
+        fill
+        className="object-cover"
+        priority
+        unoptimized
       />
     </div>
   );

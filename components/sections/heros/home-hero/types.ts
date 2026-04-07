@@ -4,6 +4,7 @@ export interface ServiceCard {
   image: string;
   category: string;
   title: string;
+  href: string;
   onClick?: () => void;
 }
 

@@ -9,8 +9,8 @@ export function ImageHero() {
         Glissez pour comparer avant / après pose du film
       </p>
       <ImageComparison
-        beforeImage="/images/why-section/cuisine-before.jpg"
-        afterImage="/images/why-section/cuisine-after.jpg"
+        beforeImage="/images/films-solaires/before.jpg"
+        afterImage="/images/films-solaires/after.jpg"
       />
     </div>
   );

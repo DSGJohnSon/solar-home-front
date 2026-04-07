@@ -1,16 +1,15 @@
-"use client";
-
-import { ImageComparison } from "@/components/ui/image-comparison";
+import Image from "next/image";
 
 export function ImageHero() {
   return (
-    <div className="w-full">
-      <p className="text-center text-[11px] text-zinc-400 mb-2">
-        Glissez pour comparer avant / après pose
-      </p>
-      <ImageComparison
-        beforeImage="/images/adhesifs-decoratifs/before.jpg"
-        afterImage="/images/adhesifs-decoratifs/after.jpg"
+    <div className="relative w-full aspect-video overflow-hidden">
+      <Image
+        src="/images/services-solar-home-decoratifs.webp"
+        alt="Adhésifs décoratifs Cover Styl par Solar Home 37"
+        fill
+        className="object-cover"
+        priority
+        unoptimized
       />
     </div>
   );

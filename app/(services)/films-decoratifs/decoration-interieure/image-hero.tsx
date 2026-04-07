@@ -1,16 +1,15 @@
-"use client";
-
-import { ImageComparison } from "@/components/ui/image-comparison";
+import Image from "next/image";
 
 export function ImageHero() {
   return (
-    <div className="w-full">
-      <p className="text-center text-[11px] text-zinc-400 mb-2">
-        Glissez pour comparer avant / après pose
-      </p>
-      <ImageComparison
-        beforeImage="/images/decoration-interieure/before.jpg"
-        afterImage="/images/decoration-interieure/after.jpg"
+    <div className="relative w-full aspect-video overflow-hidden">
+      <Image
+        src="/images/decoration-interieure/films-decoration-interieure-escalier.webp"
+        alt="Film décoratif pour rénovation de mobilier par Solar Home 37 à Tours"
+        fill
+        className="object-cover"
+        priority
+        unoptimized
       />
     </div>
   );

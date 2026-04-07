@@ -2,10 +2,10 @@ import { FooterData } from "../types";
 
 export const footerData: FooterData = {
   socialLinks: [
-    { title: "Facebook", href: "#", icon: "FacebookLogoIcon" },
+    // { title: "Facebook", href: "#", icon: "FacebookLogoIcon" },
     { title: "Instagram", href: "https://www.instagram.com/SolarHome_37", icon: "InstagramLogoIcon" },
-    { title: "Youtube", href: "#", icon: "YoutubeLogoIcon" },
-    { title: "LinkedIn", href: "#", icon: "LinkedinLogoIcon" },
+    // { title: "Youtube", href: "#", icon: "YoutubeLogoIcon" },
+    // { title: "LinkedIn", href: "#", icon: "LinkedinLogoIcon" },
   ],
   footerLinkGroups: [
     {

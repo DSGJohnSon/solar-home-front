@@ -1,16 +1,15 @@
-"use client";
-
-import { ImageComparison } from "@/components/ui/image-comparison";
+import Image from "next/image";
 
 export function ImageHero() {
   return (
-    <div className="w-full">
-      <p className="text-center text-[11px] text-zinc-400 mb-2">
-        Glissez pour comparer avant / après pose
-      </p>
-      <ImageComparison
-        beforeImage="/images/logo-visuels-sur-vitrages/before.jpg"
-        afterImage="/images/logo-visuels-sur-vitrages/after.jpg"
+    <div className="relative w-full aspect-video overflow-hidden">
+      <Image
+        src="https://media.istockphoto.com/id/2220292070/fr/photo/biblioth%C3%A8que-oosterdok-de-labo.jpg?s=612x612&w=0&k=20&c=C-5C6-BuY9-4i0eSh1-1NW_zR0ToleiGex2GeYQuFYY="
+        alt="Logo et visuels sur vitrages par Solar Home 37"
+        fill
+        className="object-cover"
+        priority
+        unoptimized
       />
     </div>
   );

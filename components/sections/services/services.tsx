@@ -51,12 +51,12 @@ export function Services() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex items-center gap-4 mt-4 md:mt-8 pointer-events-auto"
         >
-          <Link href="#" title="">
+          <Link href="/contact" title="">
             <Button className="cursor-pointer" size={isMobile ? "lg" : "xl"}>
               Demander un devis
             </Button>
           </Link>
-          <Link href="#" title="">
+          <Link href="/nos-realisations" title="">
             <Button
               variant="outline"
               className="cursor-pointer"
@@ -76,7 +76,7 @@ export function Services() {
           className="w-full lg:w-1/2 h-full"
         >
           <Link
-            href="#"
+            href="/films-vitrages"
             title=""
             className="relative block bg-red-100 w-full h-[25svh] lg:h-full mb-[4svh] lg:mb-0 hover:cursor-pointer group"
           >
@@ -107,7 +107,7 @@ export function Services() {
           className="w-full lg:w-1/2 h-[54svh] lg:h-full space-y-[4svh] lg:space-y-0"
         >
           <Link
-            href="#"
+            href="/films-decoratifs"
             title=""
             className="relative block bg-red-100 w-full h-[25svh] lg:h-1/2 hover:cursor-pointer group"
           >
@@ -130,7 +130,7 @@ export function Services() {
             </div>
           </Link>
           <Link
-            href="#"
+            href="/films-publicitaires"
             title=""
             className="relative block bg-red-100 w-full h-[25svh] lg:h-1/2 hover:cursor-pointer group"
           >

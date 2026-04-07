@@ -11,7 +11,10 @@ import Image from "next/image";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import { Button } from "../../../ui/button";
-import { HomeHeroProps, ServiceCard } from "@/components/sections/heros/home-hero/types";
+import {
+  HomeHeroProps,
+  ServiceCard,
+} from "@/components/sections/heros/home-hero/types";
 import { Tiles } from "@/components/backgrounds/tiles";
 
 export function HomeHero({
@@ -90,27 +93,33 @@ export function HomeHero({
       key={index + service.title}
       className="shrink-0 cursor-pointer relative overflow-hidden h-[24svh] sm:h-[28svh] md:h-[35svh] aspect-4/3 sm:aspect-video group"
     >
-      <Image
-        src={service.image}
-        alt={service.title}
-        fill
-        className="object-cover group-hover:scale-105 transition-transform duration-500"
-      />
-      <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 group-hover:via-transparent to-black/70 transition-colors duration-500" />
-      <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 border-b-[6px] md:border-b-8 border-primary flex flex-col lg:gap-2">
-        <span className="text-[10px] md:text-[12px] font-medium text-white/80 tracking-widest">
-          {service.category}
-        </span>
-        <h3 className="text-[18px] md:text-[24px] font-semibold text-white leading-[1.3]">
-          {service.title}
-        </h3>
-      </div>
-      <div className="hidden lg:flex absolute bottom-4 right-4 md:bottom-8 md:right-8 items-center gap-1.5 md:gap-2 text-white">
-        <span className="text-sm md:text-lg after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 after:ease-in-out group-hover:after:w-full">
-          Découvrir
-        </span>
-        <ArrowRightIcon className="size-4 md:size-5" />
-      </div>
+      <Link
+        href={service.href}
+        title={service.title}
+        className="absolute inset-0 z-20"
+      >
+        <Image
+          src={service.image}
+          alt={service.title}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 group-hover:via-transparent to-black/70 transition-colors duration-500" />
+        <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 border-b-[6px] md:border-b-8 border-primary flex flex-col lg:gap-2">
+          <span className="text-[10px] md:text-[12px] font-medium text-white/80 tracking-widest">
+            {service.category}
+          </span>
+          <h3 className="text-[18px] md:text-[24px] font-semibold text-white leading-[1.3]">
+            {service.title}
+          </h3>
+        </div>
+        <div className="hidden lg:flex absolute bottom-4 right-4 md:bottom-8 md:right-8 items-center gap-1.5 md:gap-2 text-white">
+          <span className="text-sm md:text-lg after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 after:ease-in-out group-hover:after:w-full">
+            Découvrir
+          </span>
+          <ArrowRightIcon className="size-4 md:size-5" />
+        </div>
+      </Link>
     </motion.div>
   );
 
@@ -213,7 +222,7 @@ export function HomeHero({
           )}
 
           {/* Social Proof */}
-          {socialProof && (
+          {/* {socialProof && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -245,7 +254,7 @@ export function HomeHero({
                 {socialProof.text}
               </span>
             </motion.div>
-          )}
+          )} */}
         </motion.div>
       </div>
 
